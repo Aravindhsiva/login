@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="image/png" rel="icon" href="https://cdn3.iconfinder.com/data/icons/black-easy/512/538642-user_512x512.png">
+    <script>
+        $(document).ready(function() {
+            $("#light").click(function() {
+                $('body').css('background-image', "url('two.jpg')");
+                $('body').css('transition-duration', "0.9s");
+            });
+            $("#dark").click(function() {
+               $('body').css('background-image', "url('one.jpg')");
+               $('body').css('transition-duration', "0.9s");
+            });
+        });
+
+    </script>
+</head>
+
+<body background="back" id="bod">
+    <div class="container text-center" style="margin-top: 10%;">
+        <form method="post" name="login" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()">
+            <br>
+            <img src="user.png" width="25%;">
+            <h3>Login Form</h3>
+            <hr>
+            <b><p>Username :</p></b>
+            <input type="text" name="email" placeholder="Your Name" id="name">
+            <br><br>
+            <b><p>Password :</p></b> <input type="password" name="password" placeholder="Password" id="pass">
+            <br><br>
+            <p><button type="submit" id="button" onclick="func()">Login <span class="glyphicon glyphicon-chevron-right"></span></button></p>
+        </form>
+        <button id="light">Light</button>
+        <button id="dark">Dark</button>
+    </div>
+    <br>
+</body>
+
+</html>
